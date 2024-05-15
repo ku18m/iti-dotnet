@@ -1,1 +1,1 @@
-## First of firsts html and css because it's my weakness and weeks 0 module.
+## First of firsts html and css because it's my weakness and week's 0 module.
