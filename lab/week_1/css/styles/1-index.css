@@ -52,6 +52,8 @@ li a:hover {
 
 .header {
   background-image: url("https://www.instyle.com/thmb/mBCPAq2-Xjj2aPdIkv36nQd0-6Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/052623-style-tips-lead-051015daa6224e0b834cf55b2082f158.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 0;
   text-align: center;
 }
