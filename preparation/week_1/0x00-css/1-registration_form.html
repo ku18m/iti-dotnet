@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <table border="1">
+      <tr>
+        <th colspan="2">registration Form</th>
+      </tr>
+      <tr>
+        <td><label for="firstName">first name</label></td>
+        <td><input type="text" id="firstName" name="firstName"></td>
+      </tr>
+      <tr>
+        <td><label for="lastName">Last name</label></td>
+        <td><input type="text" id="lastName" name="lastName"></td>
+      </tr>
+      <tr>
+        <td><label for="userName">User name</label></td>
+        <td><input type="text" id="userName" name="userName"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Pass</label></td>
+        <td><input type="password" id="password" name="password"></td>
+      </tr>
+      <tr>
+        <td><label for="track">Track</label></td>
+        <td>
+          <select id="track" name="track">
+            <option value="Q3DNET">.NET</option>
+            <option value="Q3PBI">BI</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2"><label for="gender">Gender</label></td>
+        <td><input type="radio" name="gender" value="male"> Male</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="gender" value="female"> Female</td>
+      </tr>
+      <tr>
+        <td><label for="favourites">Favourites</label></td>
+        <td>
+          <input type="checkbox" value="football" name="favourites"/> Football
+          <input type="checkbox" value="basketball" name="favourites"/> basketball
+          <input type="checkbox" value="games" name="favourites"/> games
+          <input type="checkbox" value="reading" name="favourites"/> reading
+          <input type="checkbox" value="swimming" name="favourites"/> swimming
+          <input type="checkbox" value="Trave" name="favourites"/> Trave
+        </td>
+      </tr>
+      <tr>
+        <td><label for="description">description</label></td>
+        <td><textarea id="description" name="description"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="file"/>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

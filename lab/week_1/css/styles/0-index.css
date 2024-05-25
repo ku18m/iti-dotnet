@@ -1,0 +1,90 @@
+body {
+  background-color: #f1f0e4;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.header {
+  padding: 50px;
+  text-align: center;
+}
+
+.mainProjects {
+  padding: auto;
+  text-align: center;
+}
+
+.mainProjects a {
+  font-style: none;
+  color: orange;
+}
+
+.mainProjects .projectsPics .projectPic {
+  width: 215px;
+  height: 150px;
+  margin: 10px;
+  align-items: center;
+}
+
+.mainProjects a {
+  display: block;
+  text-align: right;
+  margin-top: 40px;
+}
+
+.cards {
+  text-align: center;
+}
+
+.cards .card {
+  display: inline-block;
+  width: 215px;
+  height: 150px;
+  margin: 10px;
+  text-align: left;
+}
+
+.cards .card .cardPic {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.cards .card .cardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.cards .card .cardParagraph {
+  font-size: 15px;
+}
+
+.cards .card a {
+  font-size: 10px;
+  float: right;
+  color: orange;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(44, 46, 34);
+  color: #f1f0e4;
+  font-weight: lighter;
+  padding: 30px 0px;
+}
+
+.footer .footerRightParagraph {
+  float: right;
+  margin-right: 20px;
+}
+
+.footer .footerLeftParagraph {
+  float: left;
+  margin-left: 20px;
+}
