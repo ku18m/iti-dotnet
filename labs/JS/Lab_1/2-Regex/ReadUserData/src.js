@@ -1,3 +1,4 @@
+// Declare the variables
 var userName;
 var userPhoneNumber;
 var userMobileNumber;
@@ -44,7 +45,6 @@ var allUserDataDiv = `
 // Getting the color from the user
 var userColor = prompt("Enter your favorite color: ");
 var styleSheet = document.styleSheets[0];
-console.log(styleSheet);
 styleSheet.insertRule(`.colored { color: ${userColor}; }`);
 
 // Show the data for the user
