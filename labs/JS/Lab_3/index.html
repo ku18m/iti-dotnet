@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="tab" onclick="display(1)">Count the attributes task</button>
+        <button class="tab" onclick="display(2)">Reado Go Game</button>
+        <button class="tab" onclick="display(3)">Arrays</button>
+    </nav>
+    <div class="task task1">
+        <h1>Count the elements Task</h1>
+        <hr>
+        <div class="inputs">
+            <div class="tagName input">
+                <label for="tagName">Tag Name</label>
+                <input type="text" id="tagName">
+            </div>
+            <div class="className input">
+                <label for="className">Class Name</label>
+                <input type="text" id="className">
+            </div>
+            <div class="id input">
+                <label for="id">ID</label>
+                <input type="text" id="id">
+            </div>
+            <div class="name input">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+        </div>
+        <button class="showResult" onclick="countElements()">Show Results</button>
+        <div class="result">
+            <h2>Results</h2>
+            <p>Tag Name: <span id="tagNameResult">0</span></p>
+            <p>Class Name: <span id="classNameResult">0</span></p>
+            <p>ID: <span id="idResult">0</span></p>
+            <p>Name: <span id="nameResult">0</span></p>
+        </div>
+    </div>
+    <div class="task task2">
+        <h1>Ready Go Game</h1>
+        <hr>
+        <div class="container2">
+            <div class="leftHand">
+                <p class="input">Input</p>
+                <p class="output">Output</p>
+                <p class="notes">Notes</p>
+            </div>
+            <div class="rightHand">
+                <div class="input">
+                    <label for="input">Number</label>
+                    <input type="number" id="readyGoInput" onchange="readyGo()">
+                </div>
+                <div class="output">
+                    <div class="circles">
+                        <div class="circle" id="circle1"></div>
+                        <div class="circle" id="circle2"></div>
+                        <div class="circle" id="circle3"></div>
+                    </div>
+                    <p id="resultPhrase"></p>
+                </div>
+                <div class="Notes">
+                    <p>Notes:</p>
+                    <p>1. Ready</p>
+                    <p>2. Steady</p>
+                    <p>3. Go</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="task task3">
+        <h1>Arrays Task</h1>
+        <hr>
+        <div class="arraysBody">
+            <label for="array">Enter the array to sort seperated by ", "</label>
+            <input type="text" id="arrayToManipulate">
+            <button class="showResult" onclick="manipulateArray()">Show Results</button>
+            <div class="arrResults">
+                <p>Second Max element is: <span id="secondMaxElm"></span></p>
+                <p>Second Min element is: <span id="secondMinElm"></span></p>
+            </div>
+        </div>
+        <hr>
+        <h1>Capitalize String Task</h1>
+        <div class="alphaStr">
+            <label for="string">Enter a string to make it capitalized</label>
+            <input type="text" id="stringToCapitalize">
+            <p>The capitalized string is: <span id="capitalizedString"></span></p>
+            <button id="capitalize" onclick="capitalizeString()">Capitalize</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
