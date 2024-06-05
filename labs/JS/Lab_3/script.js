@@ -1,5 +1,6 @@
 document.onload = clear();
 function display(taskNumber) {
+    document.getElementById('title').style.display = 'none';
     clear(); // Clear all the tasks
     console.log("Task " + taskNumber + " is displayed");
     taskToDisplay = document.querySelector(`.task${taskNumber}`);
@@ -12,7 +13,7 @@ function clear() {
     tasks = document.getElementsByClassName("task");
     for (var i = 0; i < tasks.length; i++) {
         tasks[i].style.display = "none";
-    }
+}
 }
 
 function countElements() {
@@ -35,8 +36,17 @@ function countElements() {
     document.getElementById("nameResult").innerHTML = nameElements.length;
 }
 
+function clearCircles() {
+    var circles = document.getElementsByClassName("circle");
+    for (var i = 0; i < circles.length; i++) {
+        circles[i].style.backgroundColor = "#f8f9fa";
+    }
+    document.getElementById("resultPhrase").innerHTML = "";
+}
+
 function readyGo() {
     var inputValue = document.getElementById("readyGoInput").value;
+    clearCircles();
     console.log(inputValue);
     switch (inputValue[0]) {
         case "1":
