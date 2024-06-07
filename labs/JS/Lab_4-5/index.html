@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="tab" onclick="display(1); triggerLights()">Ready Go Game</button>
+        <button class="tab" onclick="display(2), playPause()">Slide Show Game</button>
+        <button class="tab" onclick="display(3); handleForm()">Dynamic Element Creation</button>
+        <button class="tab" onclick="display(4)">Flying window</button>
+        <button class="tab" onclick="display(5)">Writing Window</button>
+        <button class="tab" onclick="display(6); triggerMarbles()">Moving Marbles</button>
+        <button class="tab" onclick="display(7); handleStudentsForm();">Students Table</button>
+    </nav>
+    <div id="title">
+        <h1 class="headline">JavaScript Lab 4-5</h1>
+    </div>
+    <div class="container">
+        <div class="task task1">
+            <h2>Ready Go Game</h2>
+            <div class="container1">
+                <div class="rightHand">
+                    <p class="status" id="lightStatus"></p>
+                    <div class="output">
+                        <div class="circles">
+                            <div class="circle" id="circle1"></div>
+                            <div class="circle" id="circle2"></div>
+                            <div class="circle" id="circle3"></div>
+                        </div>
+                        <p id="resultPhrase"></p>
+                    </div>
+                    <div class="Notes">
+                        <p>Notes:</p>
+                        <p>1. Ready</p>
+                        <p>2. Steady</p>
+                        <p>3. Go</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task task2">
+            <h2>Slide Show Game</h2>
+            <!-- <hr> -->
+            <img src="./assets/slider/1.jpg" alt="#imgNum" id="sliderImage">
+            <div class="controls">
+                <button id="previous" onclick="nextPrevious('previous')"><img src="./assets/slider/next.png" alt=""></button>
+                <button id="play-pause" onclick="playPause()"><img src="./assets/slider/play.png" alt=""></button>
+                <button id="next" onclick="nextPrevious('next')"><img src="./assets/slider/next.png" alt=""></button>
+            </div>
+        </div>
+        <div class="task task3">
+            <h2>Dynamic Element Creation</h2>
+            <form action="" id="elementAttrs">
+                <input type="text" placeholder="Tag Name" name="tagName">
+                <input type="text" placeholder="Color" name="color">
+                <input type="text" placeholder="Text" name="text">
+                <button type="submit">Create Element</button>
+            </form>
+            <div id="elementOutput">
+                <p class="elementOutput"></p>
+            </div>
+        </div>
+        <div class="task task4">
+            <h2>Flying window</h2>
+            <div class="flyingControls">
+                <button onclick="flyTheWindow('start')">Fly</button>
+                <button onclick="flyTheWindow('stop')">Stop</button>
+                <button onclick="flyTheWindow('close')">Close</button>
+            </div>
+        </div>
+        <div class="task task5">
+            <h2>Writing Window</h2>
+            <div class="writingInput">
+                <input id="textToWrite" type="text" placeholder="Enter the text you want to write.">
+                <button onclick="writingWindowHandler()">Run</button>
+            </div>
+        </div>
+        <div class="task task6">
+            <h2>Moving Marbles</h2>
+            <div class="marbles" onmouseenter="triggerMarbles()" onmouseleave="triggerMarbles()">
+                <img src="./assets/marbles/off.jpg" alt="" id="marble1">
+                <img src="./assets/marbles/off.jpg" alt="" id="marble2">
+                <img src="./assets/marbles/off.jpg" alt="" id="marble3">
+                <img src="./assets/marbles/off.jpg" alt="" id="marble4">
+                <img src="./assets/marbles/off.jpg" alt="" id="marble5">
+            </div>
+        </div>
+        <div class="task task7">
+            <h2>Students Table</h2>
+            <form action="" id="newStudent">
+                <input type="text" placeholder="Name" name="name">
+                <input type="text" placeholder="Age" name="age">
+                <button type="submit">Add Student</button>
+                <p id="notificationPlaceholder"></p>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
