@@ -188,7 +188,7 @@ function triggerFlying(flyingWindow) {
             console.log(screen.height);
             stepV *= -1; // Switch the vertical step direction.
         }
-    }, 1);
+    }, 15); // For not freezing your browser.
     intervals['flyingWindow'] = interval;
 }
 
@@ -272,12 +272,12 @@ function processStudentsForm(e) {
     var student = {name: studentName, age: studentAge};
     for (var i = 0; i < Students.length; i++) {
         if (Students[i].name == student.name && Students[i].age == student.age) {
-            notificationPlaceHolderHandler("User already Exists", "failed");
+            notificationPlaceHolderHandler("Student already Exists", "failed");
             return;
         }
     }
     Students.push(student);
-    notificationPlaceHolderHandler("User Added Successfully", "success");
+    notificationPlaceHolderHandler("Student Added Successfully", "success");
     processTable();
     console.log(Students);
 }
@@ -371,7 +371,7 @@ function createTable() {
 function deleteStudent(idx) {
     Students.splice(idx, 1);
     processTable();
-    notificationPlaceHolderHandler("User Deleted Successfully", "success");
+    notificationPlaceHolderHandler("Student Deleted Successfully", "success");
 }
 
 function removeImg() {
