@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="tab" onclick="display(1); handleReverseArrayForm();">Reverse Array</button>
+        <button class="tab" onclick="display(2); checkLogin();">Cookies Handler</button>
+        <button class="tab" onclick="display(7); handleUsersForm();">Users Table</button>
+    </nav>
+    <div id="title">
+        <h1 class="headline">JavaScript Lab 6</h1>
+    </div>
+    <div class="container">
+        <div class="task task1">
+            <h2>Reverse Array</h2>
+            <form action="" id="reverseArray">
+                <input type="text" placeholder="Seperated by ','" name="array">
+                <button type="submit">Reverse Array</button>
+                <div class="reverseMethod">
+                    <div class="arrOutputDiv">
+                        <p>Method One</p>
+                        <p class="arrOutput" id="reverseMethodOnePlaceholder"></p>
+                    </div>
+                    <div class="arrOutputDiv">
+                        <p>Method Two</p>
+                        <p class="arrOutput" id="reverseMethodTwoPlaceholder"></p>
+                    </div>
+                    <div class="arrOutputDiv">
+                        <p>Adding numbers</p>
+                        <p class="arrOutput" id="addingNumbersPlaceholder"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="task task2">
+            <h2>Cookies Handler</h2>
+            <div class="userLoginInputsDiv">
+                <label for="name">
+                    <input type="text" placeholder="Enter your name" id="namePick">
+                </label>
+                <label for="age">
+                    <input type="text" placeholder="Enter your age" id="agePick">
+                </label>
+                <div class="genderPick">
+                    <input type="radio" value="male" id="malePick" name="gender">
+                    <img src="./assets/cookies/male.jpg" alt="">
+                    <input type="radio" value="female" id="femalePick" name="gender">
+                    <img src="./assets/cookies/female.jpg" alt="">
+                </div>
+                <label for="color">Pick your color</label>
+                <input list="colorsPick" id="colorPick">
+                <datalist id="colorsPick">
+                    <option value="Red">
+                    <option value="Green">
+                    <option value="Blue">
+                </datalist>
+                <button id="login" onclick="login()">Login</button>
+            </div>
+            <div class="userLoggedInDiv">
+                <img src="" alt="" id="userGenderImg">
+                <p id="loggedIn">Welcome <span id="userName"></span> you Have visited this site <span id="userLoggedInTimes"></span> times :)</p>
+                <button id="logout" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div class="task task7">
+            <h2>Users Table</h2>
+            <form action="" id="newUser">
+                <button type="submit">Get Users</button>
+                <p id="notificationPlaceholder"></p>
+            </form>
+            <div class="outPutDiv">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
