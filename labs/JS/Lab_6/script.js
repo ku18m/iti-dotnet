@@ -319,7 +319,6 @@ function processLogin() {
         userGenderImg.src = "./assets/cookies/female.jpg";
     }
     user.loggedInTimes++;
-    // document.cookie = `loggedInUser=${JSON.stringify(user)}; expires=${expireDate}; path=/;`;
     setCookie('loggedInUser', JSON.stringify(user), 3);
 }
 
@@ -336,9 +335,7 @@ function getCookie(key) {
 
 // Logout function
 function logout() {
-    var expireDate = new Date();
-    expireDate.setDate(expireDate.getDate() - 1);
-    document.cookie = `loggedInUser=; expires=${expireDate}; path=/;`;
+    setCookie('loggedInUser', "", -1);
     cookiesDisplay(getCookie('loggedInUser'));
 }
 
