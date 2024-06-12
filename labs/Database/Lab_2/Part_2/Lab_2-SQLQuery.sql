@@ -10,14 +10,13 @@ select Fname, Lname, Salary, Dno from Employee;
 
 -- 3
 -- Display all the projects names, locations and the department which is responsible about it.
-select Pname, Plocation, Departments.Dnum, Departments.Dname, Departments.MGRSSN, Departments.[MGRStart Date] from Project
-inner join Departments on Project.Dnum=Departments.Dnum;
+select Pname, Plocation, Dnum from Project;
 
 -- 4
 -- If you know that the company policy is to pay an annual commission for each employee, 
 -- with specific percent equals 10% of his/her annual salary.
 -- Display each employee full name and his annual commission in an ANNUAL COMM column (alias).
-select Fname+' '+Lname as 'full name', Salary / 10 as 'ANNUAL COMM' from Employee;
+select Fname+' '+Lname as 'full name', (Salary / 10) * 12 as 'ANNUAL COMM' from Employee;
 
 -- 5
 -- Display the employees Id, name who earns more than 1000 LE monthly.
