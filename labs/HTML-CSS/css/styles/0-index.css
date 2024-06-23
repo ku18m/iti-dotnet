@@ -39,13 +39,7 @@ body {
   text-align: center;
 }
 
-.cards .card {
-  display: inline-block;
-  width: 215px;
-  height: 150px;
-  margin: 10px;
-  text-align: left;
-}
+.cards c
 
 .cards .card .cardPic {
   width: 32px;
