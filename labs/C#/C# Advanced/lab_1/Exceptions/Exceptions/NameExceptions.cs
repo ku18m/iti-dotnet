@@ -1,6 +1,4 @@
-﻿using Exceptions;
-
-namespace NameExceptions
+﻿namespace Exceptions
 {
     /// <summary>
     /// Class <c>NameNotCapitalizedException</c> is an exception for when a name is not capitalized

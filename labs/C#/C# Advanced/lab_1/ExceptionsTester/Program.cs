@@ -1,4 +1,5 @@
-﻿namespace ExcpetionsTester
+﻿using Exceptions;
+namespace ExcpetionsTester
 {
     public class Student
     {
@@ -11,11 +12,11 @@
             set
             {
                 if (value.Length < 3)
-                    throw new NameExceptions.NameTooShortException();
+                    throw new NameTooShortException();
                 if (value.Length > 10)
-                    throw new NameExceptions.NameTooLongException();
+                    throw new NameTooLongException();
                 if (char.IsLower(value[0]))
-                    throw new NameExceptions.NameNotCapitalizedException();
+                    throw new NameNotCapitalizedException();
                 _name = value;
             }
         }
@@ -26,9 +27,9 @@
             set
             {
                 if (value < 18)
-                    throw new AgeExceptions.AgeTooYoungException();
+                    throw new AgeTooYoungException();
                 if (value > 28)
-                    throw new AgeExceptions.AgeTooOldException();
+                    throw new AgeTooOldException();
                 _age = value;
             }
         }

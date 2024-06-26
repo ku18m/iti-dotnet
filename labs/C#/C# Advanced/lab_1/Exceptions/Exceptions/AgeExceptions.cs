@@ -1,6 +1,4 @@
-﻿using Exceptions;
-
-namespace AgeExceptions
+﻿namespace Exceptions
 {
     /// <summary>
     /// Class <c>AgeTooYoungException</c> is an exception for when an age is too young
