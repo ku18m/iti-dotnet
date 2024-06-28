@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Queue
+﻿namespace Queue
 {
     internal class Queue<Type>
     {
@@ -12,7 +6,6 @@ namespace Queue
         int first = -1;
         int last = -1;
 
-        // int size = 0;
 
         public Queue(int size = 10)
         {
@@ -63,6 +56,9 @@ namespace Queue
 
 
         //Old version, handling using size indicator variable.
+
+        // int size = 0;
+
 
         //public void push(Type item)
         //{
