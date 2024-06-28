@@ -4,36 +4,83 @@
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Queue<int> q = new Queue<int>(5);
-                q.push(1);
-                q.push(2);
-                q.push(3);
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                q.push(4);
-                q.push(4);
-                Console.WriteLine(q.pop());
-                q.push(4);
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                q.push(70);
-                q.push(4);
-                q.push(4);
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-                Console.WriteLine(q.pop());
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            
+            Queue<int> q = new Queue<int>(5);
+            q.push(1);
+            q.print();
+            q.push(2);
+            q.print();
+            q.push(3);
+            q.print();
+
+            q.push(4);
+            q.print();
+
+            q.push(5);
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.push(6);
+            q.print();
+
+            q.push(7);
+            q.print();
+
+            q.push(8);
+            q.print();
+
+            q.push(9);
+            q.print();
+
+            //q.push(10);
+            //q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
+
+            q.pop();
+            q.print();
         }
     }
 }
