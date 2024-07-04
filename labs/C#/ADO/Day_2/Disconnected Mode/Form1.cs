@@ -276,12 +276,15 @@ namespace Disconnected_Mode
             if (e.RowIndex == dgv_courses.Rows.Count)
                 return;
 
-            int rowIdx = e.RowIndex;
+            // Data adapter doesn't apply the changes to the database.
 
-            for (int i = rowIdx; i < dgv_courses.Rows.Count - 1; i++)
-            {
-                dgv_courses.Rows[i].Cells[0].Value = (i + 1) * 100;
-            }
+            // Update the IDs of the courses.
+            //int rowIdx = e.RowIndex;
+
+            //for (int i = rowIdx; i < dgv_courses.Rows.Count - 1; i++)
+            //{
+            //    dgv_courses.Rows[i].Cells[0].Value = (i + 1) * 100;
+            //}
         }
 
         // Cell value changed.
@@ -374,10 +377,12 @@ namespace Disconnected_Mode
             if (String.IsNullOrEmpty(txt_crsName.Text))
             {
                 btn_add.Enabled = false;
+                btn_apply.Enabled = false;
             }
             else
             {
                 btn_add.Enabled = true;
+                btn_apply.Enabled = true;
             }
         }
 
@@ -387,9 +392,13 @@ namespace Disconnected_Mode
             {
                 MessageBox.Show("Value must be between 0 and 120", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btn_add.Enabled = false;
+                btn_apply.Enabled = false;
             }
             else
+            {
                 btn_add.Enabled = true;
+                btn_apply.Enabled = true;
+            }
         }
         #endregion
     }
