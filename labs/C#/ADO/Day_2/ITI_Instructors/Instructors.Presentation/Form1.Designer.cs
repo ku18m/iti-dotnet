@@ -63,6 +63,7 @@ namespace Instructors.Presentation
             txt_insName.Name = "txt_insName";
             txt_insName.Size = new Size(141, 23);
             txt_insName.TabIndex = 1;
+            txt_insName.TextChanged += txt_insName_TextChanged;
             // 
             // lbl_insName
             // 
@@ -100,6 +101,7 @@ namespace Instructors.Presentation
             nud_insSalary.Name = "nud_insSalary";
             nud_insSalary.Size = new Size(85, 23);
             nud_insSalary.TabIndex = 5;
+            nud_insSalary.ValueChanged += nud_insSalary_ValueChanged;
             // 
             // lbl_insDepartment
             // 
@@ -124,6 +126,7 @@ namespace Instructors.Presentation
             cb_insDepartment.Name = "cb_insDepartment";
             cb_insDepartment.Size = new Size(150, 23);
             cb_insDepartment.TabIndex = 6;
+            cb_insDepartment.SelectedIndexChanged += cb_insDepartment_SelectedIndexChanged;
             // 
             // btn_add
             // 
@@ -189,6 +192,7 @@ namespace Instructors.Presentation
             cb_insDegree.Name = "cb_insDegree";
             cb_insDegree.Size = new Size(109, 23);
             cb_insDegree.TabIndex = 11;
+            cb_insDegree.SelectedIndexChanged += cb_insDegree_SelectedIndexChanged;
             // 
             // lbl_insSalary
             // 
