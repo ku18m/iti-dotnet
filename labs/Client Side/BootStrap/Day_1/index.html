@@ -12,7 +12,127 @@
     <title>Portfolio</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+        <a href="#" class="navbar-brand">Portfolio</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center mt-5">
+        <p class="display-3">Mohamed Kamal</p>
+        <p class="display-6">Full Stack .NET Developer</p>
+    </div>
+
+    <div class="container-fluid bg-light mt-5 p-5 border-top border-dark">
+        <p class="display-4 text-center">
+            Projects
+        </p>
+        <!-- card-group class -->
+        <div
+            class="card-group justify-content-around my-5"
+        >
+            <div class="card col-sm-12 col-md-6 col-lg-3">
+                <img src="https://www.fintechfutures.com/files/2023/09/Flex-logo.jpg" class="card-img-top" alt="..." width="200" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Flex</h5>
+                    <p class="card-text">E-Commerce clothes store in single HTML file using vanilla JS and pure CSS.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/ku18m/flex_store" class="btn btn-dark stretched-link">Explore</a>
+                </div>
+            </div>
+            
+            <div class="card col-sm-12 col-md-6 col-lg-3">
+                <img src="https://www.wondermind.com/wp-content/uploads/2022/09/Dark-Thoughts.png" class="card-img-top" alt="..." width="200" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Thoughts</h5>
+                    <p class="card-text">Rest-API notes application that supports sharing notes between users with email system support for notifications and password reset</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/ku18m/Thoughts" class="btn btn-dark stretched-link">Explore</a>
+                </div>
+            </div>
+            
+            <div class="card col-sm-12 col-md-6 col-lg-3">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/33/75/drawing-of-tic-tac-toe-on-a-dark-background-vector-10143375.jpg" class="card-img-top" alt="..." width="200" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Tic Tac Toe</h5>
+                    <p class="card-text">The famous TicTacToe game dektop application using windows forms with C#</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/ku18m/iti-dotnet/tree/master/labs/Server%20Side/C%23/Windows%20Form/TicTacToe" class="btn btn-dark stretched-link">Explore</a>
+                </div>
+            </div>
+            
+            <div class="card col-sm-12 col-md-6 col-lg-3">
+                <img src="https://avatars.githubusercontent.com/u/698437?s=280&v=4" class="card-img-top" alt="..." width="200" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">AirBnB Clone</h5>
+                    <p class="card-text">AirBnB clone using flask, MySQL and Jquery.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/ku18m/AirBnB_clone_v4" class="btn btn-dark stretched-link">Explore</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <footer class="bg-dark p-3">
+        <div class="row">
+            <div class="col-4">
+                <p class="h5 text-white">Map</p>
+                <a href="#" class="d-block">Home</a>
+                <a href="#" class="d-block">Project</a>
+            </div>
+            <div class="col-4">
+                <p class="h5 text-white">Links</p>
+                <a href="#" class="d-block">Home</a>
+                <a href="#" class="d-block">About</a>
+                <a href="#" class="d-block">Contact Us</a>
+            </div>
+            <div class="col-4">
+                <p class="h5 text-white">Contact</p>
+                <a href="https://www.linkedin.com/in/ku18m/" class="">
+                    <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="" class="m-1" width="50" height="50">
+                </a>
+                <a href="https://github.com/ku18m" class="">
+                    <img src="https://img.icons8.com/?size=100&id=12598&format=png&color=FFFFFF" alt="" class="m-1" width="50" height="50">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center text-white mt-5">
+                <p>&copy; 2024 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

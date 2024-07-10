@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./bootstrap-lec-1.css" rel="stylesheet"> -->
+    <!-- downloaded file -->
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css"> -->
+  </head>
+  <body>
+    <!-- Containers -->
+    <!-- will take full width of page until 768px will have fixed margin from left and right -->
+    <!-- <div class="container-md"> -->
+    <!-- will take full width of page in all screens -->
+
+    <div class="container">
+        <h2 class="text-success text-center">Container</h2>
+        <p>
+          Container is used to set the margin of the content. It contains row
+          elements and the row elements are containers of columns. This is known
+          as the grid system. Container is used to set the margin of the
+          content. It contains row elements and the row elements are containers
+          of columns.
+        </p>
+    </div>
+      <div class="container-fluid">
+          <h2 class="text-success text-center">Fluid</h2>
+          <p>
+            Container is used to set the margin of the content. It contains row
+            elements and the row elements are containers of columns. This is known
+            as the grid system. Container is used to set the margin of the
+            content. It contains row elements and the row elements are containers
+            of columns.
+          </p>
+    </div>
+    <div class="container-md">
+      <h2 class="text-success text-center">100% until large screen container</h2>
+      <p>
+        Container is used to set the margin of the content. It contains row
+        elements and the row elements are containers of columns. This is known
+        as the grid system. Container is used to set the margin of the
+        content. It contains row elements and the row elements are containers
+        of columns.
+      </p>
+</div>
+ <!-- Grid system simple -->
+    <div class="container-lg my-5 d-none">
+      <h2>basic grid</h2>
+      <div class="row">
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-primary text-light">col 4</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-lg my-5 d-none">
+      <h2>column widths</h2>
+      <div class="row">
+        <div class="col-6">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-4">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-2">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-lg my-5 d-none">
+      <h2>responsive column widths</h2>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 my-3">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-sm-6 col-lg-4 my-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-sm-6  col-lg-4 my-3">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+        <div class="col-sm-6 col-lg-4 my-3">
+          <div class="p-5 bg-primary text-light">col 4</div>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="container-lg my-5 d-none">
+      <h2>justifying columns</h2>
+      <div class="row justify-content-around"><!-- j-c-end, j-c-start, j-c-between, j-c-around -->
+        <div class="col-md-3 order-2">
+          <div class="p-5 bg-primary text-light">col 1</div>
+        </div>
+        <div class="col-md-3  order-3">
+          <div class="p-5 bg-primary text-light">col 2</div>
+        </div>
+        <div class="col-md-3  order-1 ">
+          <div class="p-5 bg-primary text-light">col 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid system row, col, offset, display,order,nest -->
+    <div class="container-fluid mt-4 d-none">
+      <div class="row">
+        <!-- order applied to only div that have order class -->
+        <div
+          class="col-lg-3 col-md-4 col-sm-3 order-4"
+          style="background-color: rebeccapurple; color: aliceblue"
+        >
+          <h1 class="test">product 1</h1>
+          <div class="row d-none">
+            <div class="col-6 bg-info">nest1</div>
+            <div class="col-6 bg-danger">nest2</div>
+          </div>
+        </div>
+        <!-- <div class="clearfix"></div> -->
+        <div
+          class="col-lg-3 col-md-4 col-sm-3 order-3"
+          style="background-color: greenyellow; color: aliceblue"
+        >
+          <h1>product 2</h1>
+        </div>
+        <div
+          class="col-lg-3 col-md-4 col-sm-3 order-2"
+          style="background-color: rgb(51, 56, 153); color: aliceblue"
+        >
+          <h1>product 3</h1>
+        </div>
+        <div
+          class="col-lg-3 col-md-4 col-sm-3 order-1"
+          style="background-color: rgb(203, 53, 158); color: aliceblue"
+        >
+          <h1>product 6</h1>
+        </div>
+      </div>
+      <div class="row d-none">
+        <div
+          class="col-lg-6 col-sm-8"
+          style="background-color: rgb(193, 203, 53); color: aliceblue"
+        >
+          <h1>product 4</h1>
+        </div>
+        <div
+          class="col-lg-6 col-sm-2"
+          style="background-color: rgb(203, 158, 53); color: aliceblue"
+        >
+          <h1>product 5</h1>
+        </div>
+      </div>
+      <!-- display none in lg screen and higher only and appear in rest-->
+      <!-- <div class="col-lg-6 col-sm-3 d-xl-none offset-lg-4" style="background-color: rgb(255, 47, 234); color: aliceblue;">
+            <h1>product 4</h1>
+          </div> -->
+      <!-- </div> -->
+    </div>
+    <!-- Typography -->
+    <div class="container mt-4 d-none">
+      <!--  heading tags -->
+      <h1>Boostrap Lec Tutorial</h1>
+      <h2>this is an h2</h2>
+      <h3>this is an h3</h3>
+      <h2 class="h3">this is an 2 with an h3 class</h2>
+
+      <!-- display headings -->
+      <h1>Test h1</h1>
+      <h1 class="display-1">display 1 heading</h1>
+      <h1 class="display-2">display 2 heading</h1>
+      <h1 class="display-6">display 6 heading</h1>
+      <p class="display-1">paragraph with display-1 class</p>
+
+      <!-- lead text & alignment -->
+      <p>Test PPPP</p>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p class="lead text-center">hello ninjas</p>
+      <p class="lead text-end">hello ninjas</p>
+      <p class="lead text-start">hello ninjas</p>
+
+      <!-- text decoration & font weight -->
+      <p class="text-decoration-underline">this is underlined text</p>
+      <p class="text-decoration-line-through">this is line-through text</p>
+      <p class="fw-bold">this bold text</p>
+      <mark>Test Mark</mark>
+      <small>this is small text</small>
+
+      <!-- text colours -->
+      <p class="text-primary">theme primary colour</p>
+      <p class="text-secondary">theme secondary colour</p>
+      <p class="text-info">theme info colour</p>
+      <p class="text-warning">theme warning colour</p>
+      <p class="text-success">theme warning colour</p>
+      <p class="text-danger">theme danger colour</p>
+      <p>testtttttttt</p>
+      <p class="text-muted">theme danger colour</p>
+
+      <!-- bg colors -->
+      <p class="text-white bg-primary">white text on primary bg</p>
+      <p class="text-white bg-secondary">white text on secondary bg</p>
+      <p class="text-light bg-danger">white text on secondary bg</p>
+      <div class="text-bg-success p-3">Dark with contrasting color</div>
+    </div>
+    <!-- buttons -->
+    <div class="container mt-4 d-none">
+      <!-- button color -->
+
+      <button class="btn btn-primary">testt</button>
+
+      <!-- anchor -->
+
+      <!-- sizes -->
+
+      <!-- outline -->
+
+      <!-- group -->
+    </div>
+
+    <!-- class utilites -->
+    <div class="container mt-4">
+      <!-- margin & padding -->
+      <div class="m-1 p-1 bg-primary">small margin & padding</div>
+      <div class="m-5 p-5 bg-primary">large margin & padding</div>
+      <div class="my-3 px-5 bg-primary">margin in y dir, padding in x dir</div>
+      <div class="mt-3 mb-4 ps-5 pt-4 pe-2 pb-1 bg-primary">
+        m & p for each direction
+      </div>
+
+      <!-- borders -->
+      <div class="m-3 p-3 border">default border</div>
+      <div class="m-3 p-3 border-bottom border-start">individual borders</div>
+      <div class="m-3 p-3 border-start border-info border-5">
+        border success colour
+      </div>
+      <div class="m-3 p-3 border-start border-danger border-3">
+        thicker border
+      </div>
+      <div class="m-3 p-3 rounded border border-5">rounded corners</div>
+      <div class="m-3 p-3 rounded-pill border border-5">rounded corners</div>
+
+      <!-- box shadow -->
+      <div class="m-3 p-3 shadow-sm">element with small shadow</div>
+      <div class="m-3 p-3 shadow">element with shadow</div>
+
+      <!-- font weight -->
+      <p class="fw-bold bg-success text-light">bold text</p>
+      <p class="fw-bolder">bolder text</p>
+      <p class="h1 text-center">act as h1 text</p>
+      <p class="lead">lead text</p>
+      <p class="text-end">normal text</p>
+      <p class="fw-light">light text</p>
+      <p class="fst-italic">italic text</p>
+      <p class="fst-italic fw-light">italic light text</p>
+
+    </div>
+    <!-- Image -->
+    <div class="container mt-4">
+      <!-- round corner -->
+      <h2>Rounded Corners</h2>
+      <p>The .rounded class adds rounded corners to an image:</p>
+      <img
+        src="cat.jpg"
+        class="rounded"
+        alt="Cinque Terre"
+        width="304"
+        height="236"
+      />
+      <!-- circle -->
+      <h2>Circle</h2>
+      <p>The .rounded class adds circle to an image:</p>
+      <img
+        src="cat.jpg"
+        class="rounded-circle"
+        alt="Cinque Terre"
+        width="304"
+        height="236"
+      />
+      <!-- Thumbnail -->
+      <h2>Thumbnail</h2>
+      <img src="cat.jpg" class="img-thumbnail" alt="Cinque Terre" />
+      <!-- align images -->
+      <h2>align images</h2>
+      <img src="cat.jpg" class="float-start" />
+      <img src="cat.jpg" class="float-end"
+       data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-title="cat on right"/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- Responsive Images scall acording to parent class -->
+      <div class="row bg-primary" style="padding-bottom: 15px; width: 200px">
+        <div class="col-12">
+          <h2>Responsive images</h2>
+          <img
+            class="img-fluid mx-auto d-block"
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+            alt="New York"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- Gallery -->
+    <div class="container my-3 d-none">
+      <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+        class="w-100 shadow-1-strong img-responsive mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+        class="w-100 shadow-1-strong img-responsive mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong img-responsive mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+        class="w-100 shadow-1-strong img-responsive mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+        class="w-100 shadow-1-strong img-responsive mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+    </div>
+    <!-- Gallery -->
+
+    <!-- Tooltip -->
+    <div class="container mt-4">
+      <button
+        type="button"
+        class="btn btn-secondary m-4"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        data-bs-title="Please enter your email"
+      >
+        Tooltip on top
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-title="Tooltip on right"
+      >
+        Tooltip on right
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-title="Tooltip on bottom"
+      >
+        Tooltip on bottom
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary m-4"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        data-bs-title="Tooltip on left"
+      >
+        Tooltip on left
+      </button>
+
+      <span tabindex="0" data-bs-toggle="tooltip" title="Tooltip Disabled">
+        <button type="button" disabled class="btn btn-info">disabled</button>
+      </span>
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- downloaded file -->
+    <!-- <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tooltip script -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
