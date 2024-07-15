@@ -6,7 +6,7 @@ namespace ITI_Courses
 {
     public partial class Form1 : Form
     {
-        // ItiContext itiContext = new ItiContext(); Old Scaffolded Context.
+        // ItiContextOld itiContext = new ItiContextOld(); Old Scaffolded Context.
         ITIContext itiContext = new ITIContext();
         public Form1()
         {

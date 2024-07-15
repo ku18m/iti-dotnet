@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ITI_Courses.Models_Old;
 
-public partial class ItiContext : DbContext
+public partial class ItiContextOld : DbContext
 {
-    public ItiContext()
+    public ItiContextOld()
     {
     }
 
-    public ItiContext(DbContextOptions<ItiContext> options)
+    public ItiContextOld(DbContextOptions<ItiContextOld> options)
         : base(options)
     {
     }
