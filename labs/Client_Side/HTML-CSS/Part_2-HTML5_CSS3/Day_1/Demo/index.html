@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Html 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 
+        Html : hyper text markup language
+
+        tags :
+            1- opening closing tag (nested tag) : p , div , h1... h6
+
+            2- self closing tag (empty tag) : hr , img , br , ....
+
+          html 5 (latest version):
+                                    new elements (new semantic tags) ,
+                                    new input types and attrs
+                                    media tags (audio , video)
+                                    graphic tags (svg , canvas) //Day02
+                                    js apis (local storage , session storage , geolocation)
+                                    
+                new semantic : nav  , footer , header , main , section , article , aside , mark 
+                                details , summary , datalist , figure , figcaption , .....
+                                
+                                
+                                1- Clean code 
+                                2- Seo (Search engine optmization)
+
+
+    
+    -->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Introduction</a></li>
+        <li><a href="#">First Section</a></li>
+        <li><a href="#">Second Section</a></li>
+        <li><a href="#">Get Started</a></li>
+      </ul>
+    </nav>
+
+    <header class="intro">
+      <section class="content">
+        <h2>Ipsum sed adipiscing</h2>
+        <p>
+          Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat
+          magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus
+          sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+        </p>
+        <button>learn more</button>
+      </section>
+      <section class="image">
+        <img src="imgs/pic01.jpg" alt="" />
+      </section>
+      <section class="clear"></section>
+    </header>
+
+    <main>
+      <h2>Magna veroeros</h2>
+      <section class="container">
+        <section class="service first">
+          <i class="fa-solid fa-code"></i>
+          <h3>Ipsum consequat</h3>
+          <p>
+            Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
+            consequat tempus veroeros sed consequat.
+          </p>
+        </section>
+        <section class="service second">
+          <i class="fa-regular fa-copy"></i>
+          <h3>Amed sed feugiat</h3>
+          <p>
+            Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
+            consequat tempus veroeros sed consequat.
+          </p>
+        </section>
+        <section class="service third">
+          <i class="fa-regular fa-gem"></i>
+          <h3>Dolor nullam</h3>
+          <p>
+            Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
+            consequat tempus veroeros sed consequat.
+          </p>
+        </section>
+        <section class="clear"></section>
+      </section>
+    </main>
+
+    <section class="new-inputs">
+      <form novalidate id="myForm">
+        username:
+        <input
+          type="text"
+          name="username"
+          id=""
+          required
+          placeholder="username"
+          autofocus
+        />
+        age :
+        <input type="number" name="age" id="numInp" />
+        <button onclick="increase()" type="button">Step up</button>
+        <button onclick="descrease()" type="button">Step down</button>
+        age:
+        <input
+          type="range"
+          id="rangeInp"
+          oninput="printVal()"
+          min="10"
+          max="100"
+          step="10"
+        />
+        <span id="rangeVal"></span>
+
+        email:
+        <input
+          type="email"
+          name="email"
+          pattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}"
+          placeholder="email"
+          autocomplete="off"
+        />
+        favColor:
+        <input type="color" name="" id="" />
+        url: <input type="url" name="" id="" />
+        search:
+        <input type="search" name="" id="" />
+        phone:
+        <input type="tel" name="" id="" />
+        date:
+        <input type="date" name="" id="" />
+        time:
+        <input type="time" name="" id="" />
+        datetime:
+        <input type="datetime" name="" id="" />
+        datetime-local:
+        <input type="datetime-local" name="" id="" />
+        week:
+        <input type="week" name="" id="" />
+        <input type="submit" value="Submit" />
+      </form>
+      <input type="text" name="lastname" form="myForm" />
+    </section>
+
+    <!-- media tags (audio , video) -->
+
+    <section class="media">
+      <!-- loop autoplay -->
+      <audio controls muted>
+        <source src="media/Anitek_-_Komorebi.ogg" type="audio/ogg" />
+        <source src="media/Anitek_-_Komorebi.mp3" type="audio/mp3" />
+        <source src="media/Anitek_-_Komorebi.wav" type="audio/wav" />
+        Your browser doesnot support audio
+      </audio>
+      <br />
+      <button onclick="playAud()">Play</button>
+      <button onclick="pauseAud()">Pause</button>
+      <button onclick="stopAud()">Stop</button>
+      <button onclick="muteAud()">Mute</button>
+      <button onclick="test()">Test</button>
+      volume :
+      <input
+        type="range"
+        name=""
+        id="rangeVolume"
+        oninput="changeVolume()"
+        min="0"
+        max="1"
+        step="0.1"
+      />
+      time :
+      <input
+        type="range"
+        name=""
+        id="rangeTime"
+        oninput="changeTime()"
+        min="0"
+      />
+    </section>
+
+    <section class="web-storage">
+      <button onclick="saveData()">Save Data</button>
+      <button onclick="getData()">Get Data</button>
+      <button onclick="removeData()">Remove item</button>
+      <button onclick="removeAll()">Remove All</button>
+      <a href="about.html" target="_blank">About</a>
+    </section>
+    <footer>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eligendi!
+      &copy;
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

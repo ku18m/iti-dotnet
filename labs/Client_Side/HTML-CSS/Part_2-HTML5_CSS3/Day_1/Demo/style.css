@@ -1,0 +1,188 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #636363;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+
+}
+
+
+.clear {
+    clear: both;
+}
+
+nav{
+    background-color: #f7f7f7;
+    padding: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+/* ------------------------------ */
+
+
+.intro{
+    padding: 90px;
+}
+
+.content {
+    float: left;
+    width: 60%;
+}
+
+.content h2{
+    font-size: 37px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+.content h2::after{
+    content: '';
+    width: 150px;
+    height: 1.5px;
+    background-image: linear-gradient(to right ,#e2a6b5 ,#c2abca ,#90c2ea);
+    position:absolute ;
+    top: 60px;
+    display: block;
+}
+
+.content p{
+    width: 80%;
+    margin: 30px 0px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.content button{
+    border: 1px solid #ddd;
+    padding: 15px 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+
+.image {
+    float:right;
+    width: 30%;
+    
+}
+
+.image img{
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+main h2{
+    font-size: 37px;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.container .service{
+    width: 30%;
+    float: left;
+    margin: 30px 0px;
+}
+
+
+.container section i{
+    font-size: 60px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 200px;
+    outline:1px solid #ddd ;
+    outline-offset: 10px;
+    margin: 30px 0px;
+}
+
+.container .first i {
+    color: #efa8b0;
+}
+.container .second i {
+    color: #a89cc8;
+}
+.container .third i {
+    color: #8cc9f0;
+}
+
+.container section h3{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.container section p{
+    line-height: 1.8;
+    font-size: 19px;
+}
+
+.new-inputs{
+    padding: 60px;
+}
+
+
+.new-inputs input{
+    margin: 10px 0px;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.new-inputs button{
+    padding: 10px 40px;
+}
+
+.media{
+    padding: 60px;
+}
+
+
+.media button{
+    padding: 10px 50px;
+}
+
+.web-storage {
+    padding: 60px;
+}
+
+.web-storage button{
+    padding: 10px 50px;
+}
+
+footer{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 30px;
+
+}
