@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Ace';
+    src: url('./fonts/bay-tavern-s.ttf');
+}
+
+svg {
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Ace';
+}
