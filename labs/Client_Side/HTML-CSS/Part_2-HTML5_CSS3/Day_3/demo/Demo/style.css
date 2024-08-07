@@ -1,0 +1,663 @@
+/* 
+    - Flexbox
+    - Grid
+    - animation
+    - selectors
+
+*/
+
+body {
+    direction: ltr;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+ ============= Flexbox ================= 
+    parent :
+        - display
+        - flex-direction
+        - flex-wrap
+        - flex-flow
+        - justify-content
+        - align-items
+        - column-gap
+        - row-gap
+        - gap
+
+    child :
+        - align-self
+        - order
+        - flex-grow
+        - flex-shrink
+        - flex-basis
+        - flex
+ 
+ ==============================
+ */
+
+/* 
+
+    direction : row
+        justify-content : x
+        align-items : y
+
+     direction : column
+        justiy-content : y   
+        align-items : x
+
+
+*/
+
+
+/* .parent {
+    background-color: teal;
+    padding: 20px;
+    display: inline-flex; */
+/* flex-direction: row;
+    flex-wrap: nowrap; */
+/* flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: 300px;
+    align-items: stretch; */
+/* align-content: flex-start; */
+/* row-gap: 30px;
+    column-gap: 20px; */
+
+/* gap: 20px 30px; */
+
+/* } */
+
+/* .parent div {
+    padding: 20px;
+    color: #fff; */
+/* margin: 10px; */
+/* width: 200px; */
+/* } */
+
+/* .child1 {
+    background-color: brown; */
+/* order: -9; */
+/* flex-grow: 1; */
+/* flex-shrink: 0; */
+/* } */
+
+/* .child2 {
+    background-color: burlywood; */
+/* align-self: center; */
+/* order: 10; */
+/* flex-grow: 4; */
+/* flex-shrink: 4; */
+/* width: 200px; */
+/* flex-basis: 200px; */
+/* flex: grow shrink basis ; */
+/* flex: 2 0 100px; */
+
+
+
+/* } */
+/* 
+.child3 {
+    background-color: blueviolet; */
+/* order: 0; */
+/* flex-grow: 3; */
+/* flex-shrink: 1; */
+
+
+
+/* } */
+
+
+/* .parent {
+    padding: 20px;
+    background-color: burlywood;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
+/* x */
+/* justify-content: space-evenly; */
+
+/* y */
+/* align-content: space-evenly; */
+
+/* row-gap: 20px;
+    column-gap: 30px; */
+/* gap: 20px 30px;
+
+
+
+} */
+
+/* 
+.child1.item1 {
+    background-color: brown; */
+/* grid-column-start: 1;
+    grid-column-end: 2; */
+/* grid-column: 1/3; */
+/* grid-row: 1/3; */
+
+/* grid-column: 3/4;
+    grid-row: 3/4; */
+/* 
+    order: 5;
+} */
+
+/* 
+.child4.item4 {
+    order: -1;
+    background-color: blueviolet;
+}
+
+.parent div {
+    background-color: teal;
+    color: #fff;
+    padding: 20px;
+} */
+
+/* ============================ */
+
+
+
+
+
+/* =========== Grid ================ 
+
+
+    parent :
+        - display
+        - gird-template-columns
+        - grid-template-rows
+        - column-gap
+        - row-gap
+        - gap
+        - justify-content
+        - align-content
+    
+    child : 
+        
+        - grid-column-start
+        - grid-column-end
+        - grid-column
+        - grid-row-start
+        - grid-row-end
+        - grid-row
+
+    ================ grid area =================
+
+        parent :
+            - grid-template-areas
+
+        child :   
+            - grid-area   
+
+   ============================================ 
+*/
+/* .parent {
+    padding: 20px;
+    background-color: burlywood;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 30px;
+    grid-template-areas:
+        "head head head"
+        "navbar . sidebar"
+        "navbar main sidebar"
+        "foot foot .";
+}
+
+
+.parent * {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} */
+
+
+/* header {
+    background-color: teal; */
+/* grid-column: 1/-1; */
+/* grid-area: head; */
+/* } */
+
+/* nav { */
+/* background-color: crimson; */
+/* grid-row: 2/4; */
+/* grid-area: navbar; */
+/* } */
+
+/* main {
+    background-color: blueviolet; */
+/* grid-row: 2/4; */
+/* grid-area: main; */
+/* } */
+
+/* aside {
+    background-color: brown; */
+/* grid-row: 2/4; */
+/* grid-area: sidebar; */
+/* } */
+/* 
+footer {
+    background-color: blue; */
+/* grid-column: 1/-1; */
+
+/* grid-area: foot; */
+/* } */
+
+
+
+/* ================================================= */
+
+
+
+
+/*====================== Animation ======================= */
+
+
+
+/* div {
+    width: 80px;
+    height: 80px;
+    background-color: teal; */
+/* animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-delay: 3s;
+    animation-timing-function: ease; */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+/* animation: move 4s ease 2s infinite normal none;
+    position: absolute; */
+/* animation-fill-mode: both; */
+/* top: 0;
+    left: 0;
+    border-radius: 4px; */
+
+/* } */
+
+
+/* @keyframes move {
+    0% {
+        translate: 0px;
+    }
+
+
+
+    100% {
+        translate: 300px;
+    }
+} */
+
+
+/* div:hover {
+    animation-play-state: paused;
+
+}
+
+
+@keyframes move {
+
+    0% {
+
+        top: 0;
+        left: 0;
+        background-color: red;
+        rotate: 0;
+
+    }
+
+    30% {
+        top: 0;
+        left: 500px;
+        background-color: yellow;
+        rotate: 90deg;
+    }
+
+    50% {
+        top: 600px;
+        left: 500px;
+        background-color: blue;
+        rotate: 180deg;
+
+    }
+
+    70% {
+
+        top: 600px;
+        left: 0px;
+        background-color: blueviolet;
+        rotate: 270deg;
+
+    }
+
+    100% {
+        top: 0px;
+        left: 0;
+        background-color: cornflowerblue;
+        rotate: 360deg;
+
+    }
+
+} */
+
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #a39e9e;
+    border-top-color: #3489db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+} */
+
+
+
+/* p {
+    text-align: center;
+    letter-spacing: 3px;
+    animation: spacing 2s infinite;
+}
+
+@keyframes spacing {
+    0% {
+        letter-spacing: 3px;
+
+    }
+
+    50% {
+        letter-spacing: 30px;
+
+    }
+
+    100% {
+        letter-spacing: 3px;
+    }
+
+
+} */
+
+
+/* ======================================= */
+/* body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #09ae88, #5e80a1)
+}
+
+i {
+    margin: 25px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.icon2,
+.icon5 {
+    rotate: 45deg;
+}
+
+.icon3,
+.icon6 {
+    rotate: 180deg;
+}
+
+
+i:hover {
+    animation: shake .5s linear infinite;
+}
+
+
+@keyframes shake {
+
+    0% {
+        rotate: 0deg;
+    }
+
+    30% {
+
+        rotate: 25deg;
+    }
+
+    50% {
+        rotate: -25deg;
+
+    }
+
+    70% {
+        rotate: 25deg;
+    }
+
+    100% {
+        rotate: -25deg;
+    }
+
+} */
+
+
+
+
+
+
+
+/* ================= Selectors ======================= */
+
+
+/*
+  * : universal selector (all elements)
+  tagName : p , h1, img
+  class : .classname
+  id :  #idname
+  space : 
+  > :  direct child
+  + :  div + p
+  ~ :
+  [] : 
+     *= : contain
+     ^= Start with
+     $= end with
+  
+  ---------------------------
+  
+  pseudo-class : (:)
+      - hover
+      - active
+      - visited
+      - link
+      - empty
+      - disabled
+      - enabled
+      - focus
+      - first-child
+      - last-child
+      - nth-child
+      - nth-last-child
+      - first-of-type
+      - last-of-type
+      - nth-of-type
+      - nth-last-of-type
+      - not
+  
+  pseudo-elements (::)
+      - before
+      - after
+      - first-line
+      - first-letter
+      - selection
+      - placeholder   
+*/
+
+
+/* div~p {
+    background-color: teal;
+    color: #fff;
+} */
+
+
+/* [width *="5"] {
+    background-color: teal;
+    color: #fff;
+} */
+
+
+/* 
+a:visited {
+    color: yellow;
+}
+
+a:link {
+    color: red;
+} */
+
+/* div {
+    width: 200px;
+    height: 200px;
+}
+
+div:empty {
+    background-color: teal;
+
+} */
+
+
+/* input:disabled {
+    background-color: teal;
+}
+
+input:enabled {
+    background-color: red;
+} */
+
+/* 
+input:focus {
+    border: 3px solid yellow;
+    outline: 0;
+}
+
+input:active {
+    border: 4px solid blue;
+} */
+/* 
+ul:first-child {
+    color: yellow;
+
+} */
+
+
+
+/* ul :first-child {
+    color: yellow;
+
+} */
+
+
+/* ul :nth-last-child(2) {
+    color: yellow;
+} */
+
+/* div p:nth-of-type(3) {
+    color: yellow;
+
+} */
+
+/* div :not(p) {
+    color: yellow;
+} */
+
+
+/* p::after {
+    content: 'this is before ';
+    color: red;
+
+} */
+
+/* p::first-letter {
+    font-size: 30px;
+} */
+
+/* p::selection {
+    background-color: yellow;
+} */
+
+/* input::placeholder {
+    color: yellow;
+} */
+
+
+/* ========================================= */
+
+/* ----------------  units  -------------------- */
+
+
+/* 
+
+    absolute units :
+        px 
+        pt
+        cm
+        mm
+
+    relative :
+        em
+        rem
+        vh
+        vw
+        minv
+        maxv    
+
+*/
+
+/* body {
+    font-size: 16px;
+}
+
+
+div {
+    font-size: 30px;
+} */
+
+
+/* html {
+
+    font-size: 20px;
+}
+
+
+div {
+    font-size: 40px;
+} */
+
+/* 
+p {
+    font-size: 7vmax;
+} */

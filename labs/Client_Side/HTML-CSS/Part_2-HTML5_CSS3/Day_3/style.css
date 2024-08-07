@@ -1,0 +1,163 @@
+.parent {
+    color: #ffff;
+    display: grid;
+    background-color: #C4EBF9;
+    width: 500px;
+    height: 500px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.parent * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.parent header {
+    grid-column: 1 / -1;
+    background-color: #02BFB1;
+}
+
+.parent aside {
+    background-color: #6EDB6E;
+    grid-row: 2 / 5;
+}
+
+.parent article {
+    background-color: #FBB04C;
+    grid-column: 2 / -1;
+    grid-row: 2 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.parent article p {
+    grid-column: 1 / -1;
+    grid-row: 2 / 4;
+}
+
+.parent .cards {
+    grid-row: 3 / -1;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.parent .img {
+    background-color: #FCD24A;
+}
+
+.parent footer {
+    grid-column: 1 / -1;
+    background-color: #02BFB1;
+}
+
+
+
+.parentFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #ffff;
+    background-color: #C4EBF9;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+.parentFlex * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.parentFlex header {
+    flex: 1 1 100%;
+    background-color: #02BFB1;
+}
+
+.parentFlex aside {
+    flex: .3 1 100px;
+    background-color: #6EDB6E;
+}
+
+.parentFlex article {
+    flex: .6 1 300px;
+    background-color: #FBB04C;
+    display: grid;
+}
+
+.parentFlex .cards {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.imgFlex {
+    flex: 1 1 100%;
+    margin: 5px;
+    background-color: #FCD24A;
+}
+
+.parentFlex footer {
+    flex: 1 1 100%;
+    background-color: #02BFB1;
+}
+
+
+
+
+
+
+
+
+/* Animations */
+
+#fadeImg:hover {
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#btn:hover {
+    animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+    0% {
+        box-shadow: 0px 0px 5px #02BFB1;
+        
+    }
+    50% {
+        box-shadow: 0px 0px 5px #FBB04C;
+    }
+    100% {
+        box-shadow: 0px 0px 5px #6EDB6E;
+    }
+}
+
+
