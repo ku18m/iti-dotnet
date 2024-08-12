@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ITI API</name>
+    </assembly>
+    <members>
+        <member name="M:ITI_API.Controllers.DepartmentsController.GetDepartments">
+            <summary>
+            get all Departments
+            </summary>
+            <returns> list of Departments</returns>
+            <remarks>
+            request example:
+             /api/departments
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.GetStudents">
+            <summary>
+            get all students
+            </summary>
+            <returns> list of students</returns>
+            <remarks>
+            request example:
+             /api/students/getall
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.GetPage(System.Int32,System.Int32)">
+            <summary>
+            Get students page.
+            </summary>
+            <param name="pageNum">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns>The requested page</returns>
+            <remarks>
+            request example:
+             /api/students?pageSize=10&amp;pageNum=3
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.Search(System.String)">
+            <summary>
+            Get students that contains the given name.
+            </summary>
+            <param name="name">Page number</param>
+            <returns>List of matched Students</returns>
+            <remarks>
+            request example:
+             /api/students?stdName=Ali
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.GetStudent(System.Int32)">
+            <summary>
+            get student by student id
+            </summary>
+            <param name="id"> student id</param>
+            <returns>A student with given id.</returns>
+            <remarks>
+            request example:
+             /api/students/3
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.PutStudent(System.Int32,ITI_API.DTOs.StudentDTO)">
+            <summary>
+            Update student by student id with new data.
+            </summary>
+            <param name="id"> student id</param>
+            <returns>No Content</returns>
+            <remarks>
+            request example:
+             /api/students/3
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.PostStudent(ITI_API.DTOs.StudentDTO)">
+            <summary>
+            Create new student with new data.
+            </summary>
+            <param name="id"> student id</param>
+            <returns> New Student </returns>
+            <remarks>
+            request example:
+             /api/students/3
+            </remarks>
+        </member>
+        <member name="M:ITI_API.Controllers.StudentsController.DeleteStudent(System.Int32)">
+            <summary>
+            Delete student by student id
+            </summary>
+            <param name="id"> student id</param>
+            <returns>A student with given id.</returns>
+            <remarks>
+            request example:
+             /api/students/3
+            </remarks>
+        </member>
+    </members>
+</doc>
