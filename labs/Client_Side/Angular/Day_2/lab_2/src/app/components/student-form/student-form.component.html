@@ -1,0 +1,59 @@
+<div class="container mt-5 ">
+  <div class="row">
+    <div class="col-6">
+      <input type="text"
+      class="form-control"
+      placeholder="Enter Your Name"
+      [(ngModel)]="studentName"
+      (input)="validateName()"
+      >
+      @if(!isValidName){
+        <span class="text-danger">Name must be at least 4 characters long</span>
+      }
+
+      <input type="number"
+      class="form-control mt-3"
+      placeholder="Enter Your Age"
+      [(ngModel)]="studentAge"
+      (input)="validateAge()"
+      >
+      @if(!isValidAge){
+        <span class="text-danger">Age must be at over 18</span>
+      }
+    </div>
+    <div class="col-6 d-flex align-items-center justify-content-center">
+      <button class="btn btn-primary"
+      [disabled]="!isValidName || !isValidAge"
+      (click)="addStudent()"
+      >Add Student</button>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      @if(students.length > 0){
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (student of students; track $index) {
+              <tr *ngFor="let student of students">
+                <td>{{student.name}}</td>
+                <td>{{student.age}}</td>
+                <td>
+                  <button class="btn btn-danger"
+                  (click)="removeStudent($index)"
+                  >Remove</button>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }@else {
+        <h3 class="text-center mt-3">No students added yet!</h3>
+      }
+    </div>
+</div>
