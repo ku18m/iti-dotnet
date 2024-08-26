@@ -1,0 +1,14 @@
+<app-navbar (changeRouteEvent)="changeRoute($event)"></app-navbar>
+@switch (route) {
+  @case ('home') {
+    <app-header-carrousel></app-header-carrousel>
+  }
+  @case ('products') {
+    <app-products></app-products>
+  }
+  @case ('login') {
+    <app-login></app-login>
+  }
+}
+
+<app-footer></app-footer>

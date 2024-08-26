@@ -1,0 +1,45 @@
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar-brand span {
+  color: #ff4400;
+}
+
+.navbar-brand:hover {
+  color: #ff4400;
+}
+
+.nav-item a {
+  transition: ease-in-out 0.3s;
+}
+
+.nav-item a:hover {
+  color: #ff4400;
+}
+
+.nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1d1c1b73;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+  transition: ease-in-out 0.3s;
+}
+
+
+.userItems a {
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+
+.userItems a:hover {
+  color: #ff4400;
+}

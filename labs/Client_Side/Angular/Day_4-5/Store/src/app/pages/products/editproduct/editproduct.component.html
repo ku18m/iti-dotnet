@@ -1,0 +1,46 @@
+<div class="container mt-5">
+
+  @if(product.id == '0') {
+    <h1>Add Product</h1>
+  }@else{
+    <h1>Edit Product</h1>
+  }
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Product Name"
+      formControlName="name">
+      @if( productForm.get('name')?.invalid && productForm.get('name')?.touched) {
+        <span class="text-danger">Name Must Be 3 Chars Long</span>
+      }@else if(productForm.get('name')?.getError('required') && productForm.get('name')?.touched) {
+        <span class="text-danger">Name is Required</span>
+      }
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Price</label>
+      <input type="number" class="form-control" id="price" placeholder="Enter Product Price" name="price"
+      formControlName="price">
+      @if( productForm.get('price')?.getError('min') && productForm.get('price')?.touched) {
+        <span class="text-danger">Minimum Price is one</span>
+      }@else if(productForm.get('price')?.getError('required') && productForm.get('price')?.touched) {
+        <span class="text-danger">Price is required</span>
+      }
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Quantity</label>
+      <input type="number" class="form-control" id="quantity" placeholder="Enter Product quantity"
+      formControlName="quantity">
+      @if( productForm.get('quantity')?.getError('min') && productForm.get('quantity')?.touched) {
+        <span class="text-danger">Minimum Quantity is one</span>
+      }@else if(productForm.get('quantity')?.getError('required') && productForm.get('quantity')?.touched) {
+        <span class="text-danger">Quantity is required</span>
+      }
+    </div>
+    @if(product.id == '0') {
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    }@else{
+      <button type="submit" class="btn btn-primary">Update Product</button>
+    }
+  </form>
+</div>

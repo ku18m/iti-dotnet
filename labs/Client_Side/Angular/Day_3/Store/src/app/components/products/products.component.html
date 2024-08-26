@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Products</h1>
+    </div>
+  </div>
+  <div class="row">
+    @for (item of products; track $index) {
+      <app-product-card
+      class="col-4"
+      [product]="item"
+      (removeProductEvent)="removeProduct($event)"
+      (discountOnProductEvent)="discountProduct($event)"
+      ></app-product-card>
+    }
+  </div>
+</div>

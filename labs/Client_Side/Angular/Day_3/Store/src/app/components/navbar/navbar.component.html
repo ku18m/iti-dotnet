@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span>Little</span>
+      Fashion
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" (click)="changeRoute('home')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="changeRoute('products')">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="changeRoute('login')">Login</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="userItems">
+      <a href="#" class="me-3">
+        <i class="bi-person custom-icon"></i>
+      </a>
+      <a href="#" class="me-3">
+        <i class="bi-bag custom-icon"></i>
+      </a>
+    </div>
+  </div>
+</nav>
